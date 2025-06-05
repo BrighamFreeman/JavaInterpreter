@@ -1,4 +1,4 @@
-# JavaInterpreter
+# CAS Interpreter
 
 This code is legacy, unsupported code, so use at your own risk. There are plenty of ways to crash the program. 
 
