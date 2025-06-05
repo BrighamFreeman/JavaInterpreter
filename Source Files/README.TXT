@@ -1,12 +1,1 @@
-------------------------------------------------------------------------
-This is the project README file. Here, you should describe your project.
-Tell the reader (someone who does not know anything about this project)
-all he/she needs to know. The comments should usually include at least:
-------------------------------------------------------------------------
-
-PROJECT TITLE:
-PURPOSE OF PROJECT:
-VERSION or DATE:
-HOW TO START THIS PROJECT:
-AUTHORS:
-USER INSTRUCTIONS:
+This folder contains all the source code for the compiled .jar. Some of the code may not be clear, as many comments were retroactively added. This project was initially created for a high school project in 2020, and the past version of myself neglected to contain any meaningul comments. I've done my best to rename variables and include comments for clarity. The general flow of the .jar is Main.java > Create.java > Variable classes. 
