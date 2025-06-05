@@ -47,8 +47,7 @@ class create { //main code class
     return isValidInteger;
   }
 
-  
-  
+  // code to display the help text
   public String help(String a){ //help function
     /*
 
@@ -105,6 +104,22 @@ class create { //main code class
 
   }
   //logic loop
+  /*
+
+                                NOTES
+    ==================================================================
+          This code loop runs the logic for each command.
+          Later in the program, the input to this function
+          is one line of input text. The code splits the 
+          first word, the command off, and passes it in as
+          com. The rest of the command gets passed in as the
+          finish variable.
+  
+          This code defines and handles mathematical operations,
+          dispalys text to consoles, and defines and redefines
+          variables.
+          
+  /*
   public void logic(String com, String finish,ArrayList<intvar> storage,ArrayList<stringvar> stringStorage,ArrayList<intARvar> arrayStorage,ArrayList<in_function> fStorage,ArrayList<st_function> sStorage){
     if(com.equals("print")){
       String toPrint = finish;
@@ -134,7 +149,7 @@ class create { //main code class
         }
     }
 
-    //mafematical operations
+    //mathematical operations
     if(com.equals("div")){
       String num1 = finish.substring(0,finish.indexOf("/"));
       String num2 = finish.substring(finish.indexOf("/")+1,finish.indexOf("~")-1);
@@ -420,6 +435,7 @@ class create { //main code class
       Scanner in = new Scanner(System.in);
       String command = in.next();
       String next = in.nextLine();
+      // split text into command keyword and rest of line
 
       if(command.equals("cls")){
         System.out.print("\033[H\033[2J");  
@@ -430,6 +446,8 @@ class create { //main code class
       if(command.equals("quit")){
           System.exit(0);
         }
+
+      // run script text from files
       if(command.equals("script")){
           try {
               String f = next.substring(1,next.indexOf(";")) + ".cas";
@@ -598,10 +616,16 @@ class create { //main code class
                       }
                     }
                   }
+                  /*
+
+                            HANDLE CONDITIONAL STATEMENTS
+
+                  /*
                   if(scriptCommand.equals("if")){ //DO NOT TOUCH ANYTHING INSIDE THIS LOOP!
                 String operator = "";
                 String conditional1 = ""; //define vars
                 String conditional2 = "";
+                //check if there are mathematical operations
                 if(scriptNext.contains("(")){
                         String op1 = "";
                         String n = scriptNext.substring(1,scriptNext.indexOf(")")+1);
@@ -643,7 +667,7 @@ class create { //main code class
                 iSecond = Integer.parseInt(second);
                 isInt2 = true;
               }
-              //logic
+              //logic for handling math 
               if(isInt1 && isInt2){
                 int totes = 1;
                 switch (op1){
@@ -682,6 +706,8 @@ class create { //main code class
                   operator = ">";
                 }
               }
+            // code to handle the rest of the conditional
+            
             conditional1 = scriptNext.substring(1,scriptNext.indexOf(operator)-1);
             conditional2 = scriptNext.substring(scriptNext.indexOf(operator)+2,scriptNext.indexOf("|")-1);
             for(int i = 0; i < storage.size();i++){
@@ -859,6 +885,7 @@ class create { //main code class
               }
             }
        }
+       // logic for handling iterated loops
        if(scriptCommand.equals("for")){ //DO NOT TOUCH ANYTHING INSIDE THIS LOOP!
           String operator = "";
           String conditional1 = ""; //define vars
