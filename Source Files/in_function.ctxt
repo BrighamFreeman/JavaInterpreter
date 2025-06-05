@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=in_function
+comment1.params=a\ b\ c\ ret\ storage\ stringStorage
+comment1.target=in_function(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.util.ArrayList,\ java.util.ArrayList)
+comment2.params=storage\ stringStorage
+comment2.target=void\ run(java.util.ArrayList,\ java.util.ArrayList)
+comment3.params=
+comment3.target=java.lang.String\ getName()
+comment4.params=storage
+comment4.target=int\ returnN(java.util.ArrayList)
+numComments=5
