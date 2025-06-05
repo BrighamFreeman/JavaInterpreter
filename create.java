@@ -435,7 +435,8 @@ class create { //main code class
       
       if(command.equals("quit")){
           System.exit(0);
-        }
+           }
+      // code to read code from a script file
       if(command.equals("script")){
           try {
               String f = next.substring(1,next.indexOf(";")) + ".cas";
