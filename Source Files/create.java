@@ -3,37 +3,31 @@ import java.io.*;
 
 /*
 
-           Notes
-================================================
-    Make Stable release for dekstop interpreter
-    Add functions to script command
+                                 Notes
+=======================================================================
+    This is the main class that interprets and executes the commands.
+    Some of the code is disorganized and some variable names don't make
+    sense. This was programmed as an independent study during high school
+    in early 2020, so the programming maturity is not up to snuff. The code
+    works, but even I can't fully explain everything. 
+
+    I have included comments where appropriate to explain what 
+    each segment does, or attempts to do. 
 
 */
 
-
-
-
-
-
-
-//function code 
-
-
-
-
-
-
-    
-
 class create { //main code class
 
+  // Define ArrayLists for variable storage
+           
   ArrayList<intvar> storage = new ArrayList<intvar>();
   ArrayList<stringvar> stringStorage = new ArrayList<stringvar>();
   ArrayList<intARvar> arrayStorage = new ArrayList<intARvar>();
   ArrayList<in_function> fStorage = new ArrayList<in_function>();
   ArrayList<stringARvar> aStringStorage = new ArrayList<stringARvar>();
   ArrayList<st_function> sStorage = new ArrayList<st_function>();
-  
+
+  // function to test if integers are passed in correctly
   public boolean isInteger(String a){
     boolean isValidInteger = false;
     //include try statement to avoid crashing if data is incorrect type
@@ -54,7 +48,7 @@ class create { //main code class
   }
 
   
-
+  
   public String help(String a){ //help function
     /*
 
