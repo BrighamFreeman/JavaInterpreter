@@ -119,7 +119,7 @@ class create { //main code class
           dispalys text to consoles, and defines and redefines
           variables.
           
-  /*
+  */
   public void logic(String com, String finish,ArrayList<intvar> storage,ArrayList<stringvar> stringStorage,ArrayList<intARvar> arrayStorage,ArrayList<in_function> fStorage,ArrayList<st_function> sStorage){
     if(com.equals("print")){
       String toPrint = finish;
