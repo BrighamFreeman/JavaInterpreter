@@ -1,0 +1,4 @@
+text[] greetings = (hello,wassup,howdy);
+int x = random(greetings);
+print greetings[x];
+if (1+2) = [9/3] | print : if statement is working;
