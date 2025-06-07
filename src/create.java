@@ -207,6 +207,7 @@ class create { //main code class
       }
     }
 
+    // multiplication loop
     if(com.equals("mul")){
       String num1 = finish.substring(0,finish.indexOf("*"));
       String num2 = finish.substring(finish.indexOf("*")+1,finish.indexOf("~")-1);
